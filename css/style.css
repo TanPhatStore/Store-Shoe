@@ -52,9 +52,15 @@ html {
     margin-bottom: 40px;
 }
 
-#title-new-arrivals {
+.title-new-arrivals {
     text-align: center;
-    line-height: 100px;
+    transform: translateY(30px);
+}
+
+.title-new-arrivals h2 {
+    background-color: black;
+    color: white;
+    line-height: 70px;
 }
 
 .row-list-shoe {
@@ -164,9 +170,21 @@ html {
     margin-left: 40px;
 }
 
-@media (max-width: 991px) {
+.cate,
+.name-store {
+    display: none;
+}
+
+@media (max-width: 1179px) {
     .cannone {
         display: none;
+    }
+    .header-mobile {
+        display: flex;
+        height: 50px;
+        align-content: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 }
 
@@ -218,5 +236,20 @@ html {
     }
     .we {
         font-size: 18px;
+    }
+    .navbar-expand {
+        display: none;
+    }
+    .cate {
+        display: block;
+        color: white;
+        font-size: 35px;
+    }
+    .name-store {
+        display: block;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 50px;
     }
 }
