@@ -9,6 +9,15 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.header {
+    position: fixed;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
 .navbar-item {
     padding: 0 15px;
 }
@@ -45,7 +54,6 @@ html {
 
 #title-new-arrivals {
     text-align: center;
-    margin: 30px 0;
 }
 
 .row-list-shoe {
@@ -60,6 +68,7 @@ html {
     font-family: "poppins";
     border-radius: 20px;
     overflow: hidden;
+    margin: 10px;
 }
 
 .icon-product {
@@ -163,6 +172,7 @@ html {
 @media (max-width: 575px) {
     .image-product {
         height: 140px;
+        margin-top: 40px;
     }
     .button-product button {
         font-size: 13px;
@@ -171,26 +181,28 @@ html {
     }
     .product {
         margin: 20px -10px;
-        height: 330px;
+        height: 340px;
     }
     .product-name {
         padding: 0 10px;
-        font-size: 16px;
+        font-size: 14px;
         transform: translateY(-30px);
+        text-align: start;
     }
     .product-price {
         transform: translateY(-30px);
     }
     .product:hover .product-name,
     .product:hover .product-price {
-        transform: translateY(-70px);
+        transform: translateY(-100px);
         opacity: 0.5;
     }
-    .product:hover .image-product {
+    .product:hover .image-product img {
+        transform: translate(10px, -70px) rotate(20deg);
         opacity: 0.5;
     }
     .product:hover .button-product {
-        transform: translateY(-80px);
+        transform: translateY(-110px);
     }
     .button-product {
         flex-wrap: wrap;
