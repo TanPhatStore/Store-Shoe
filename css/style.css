@@ -51,6 +51,7 @@ html {
 .row-list-shoe {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .product {
@@ -110,6 +111,7 @@ html {
     color: white;
     background-color: black;
     border-radius: 10px;
+    font-size: 14px;
 }
 
 .product:hover .image-product img {
@@ -128,12 +130,13 @@ html {
 .footer {
     display: flex;
     justify-content: center;
+    background-color: #333;
+    flex-wrap: wrap;
 }
 
 .map,
 .info-store {
     padding: 40px;
-    width: 49%;
 }
 
 .footer p {
@@ -149,4 +152,58 @@ html {
 .copy p {
     color: white;
     margin-left: 40px;
+}
+
+@media (max-width: 991px) {
+    .cannone {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .image-product {
+        height: 140px;
+    }
+    .button-product button {
+        font-size: 13px;
+        width: 300px;
+        margin: 1px;
+    }
+    .product {
+        margin: 20px -10px;
+        height: 330px;
+    }
+    .product-name {
+        padding: 0 10px;
+        font-size: 16px;
+        transform: translateY(-30px);
+    }
+    .product-price {
+        transform: translateY(-30px);
+    }
+    .product:hover .product-name,
+    .product:hover .product-price {
+        transform: translateY(-70px);
+        opacity: 0.5;
+    }
+    .product:hover .image-product {
+        opacity: 0.5;
+    }
+    .product:hover .button-product {
+        transform: translateY(-80px);
+    }
+    .button-product {
+        flex-wrap: wrap;
+    }
+    .map,
+    .info-store {
+        padding: 20px;
+        font-size: 15px;
+    }
+    .copy {
+        font-size: 15px;
+    }
+    .we {
+        font-size: 18px;
+    }
 }
