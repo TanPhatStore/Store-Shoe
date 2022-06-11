@@ -238,17 +238,20 @@ body {
         font-size: 14px;
         transform: translateY(-30px);
         text-align: start;
+        height: 45px;
+        overflow: hidden;
     }
-    .product-price {
-        transform: translateY(-30px);
-    }
-    .product:hover .product-name,
+    .product-price {}
     .product:hover .product-price {
-        transform: translateY(-100px);
+        transform: translateY(-80px);
         opacity: 0.5;
     }
     .product:hover .image-product img {
         transform: translate(10px, -70px) rotate(20deg);
+        opacity: 0.5;
+    }
+    .product:hover .product-name {
+        transform: translateY(-90px);
         opacity: 0.5;
     }
     .product:hover .button-product {
@@ -256,6 +259,7 @@ body {
     }
     .button-product {
         flex-wrap: wrap;
+        margin-top: 40px;
     }
     .map,
     .info-store {
