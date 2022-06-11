@@ -9,6 +9,14 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
 .header {
     position: fixed;
     background-color: black;
@@ -20,6 +28,23 @@ html {
 
 .navbar-item {
     padding: 0 15px;
+    list-style: none;
+}
+
+.nav-mobile {
+    width: 300px;
+    background-color: black;
+    transform: translateY(50px);
+    margin-right: -300px;
+    position: fixed;
+    right: 0;
+    transition: 0.5s;
+    top: 0;
+    z-index: 1;
+}
+
+.content {
+    transition: 0.5s;
 }
 
 .navbar-item a {
@@ -53,7 +78,7 @@ html {
 }
 
 .title-new-arrivals {
-    text-align: center;
+    border-bottom: 5px solid black;
     transform: translateY(30px);
 }
 
@@ -61,6 +86,9 @@ html {
     background-color: black;
     color: white;
     line-height: 70px;
+    width: 350px;
+    text-align: center;
+    margin: 0;
 }
 
 .row-list-shoe {
@@ -72,10 +100,9 @@ html {
 .product {
     height: 350px;
     font-family: "poppins";
-    border-radius: 20px;
     overflow: hidden;
     margin: 10px;
-    background-color: white;
+    background-color: rgb(250, 248, 248);
 }
 
 .icon-product {
@@ -170,6 +197,10 @@ html {
     margin-left: 40px;
 }
 
+.cate {
+    cursor: pointer;
+}
+
 .cate,
 .name-store {
     display: none;
@@ -232,10 +263,10 @@ html {
         font-size: 15px;
     }
     .copy {
-        font-size: 15px;
+        font-size: 13px;
     }
     .we {
-        font-size: 18px;
+        font-size: 15px;
     }
     .navbar-expand {
         display: none;
@@ -251,5 +282,16 @@ html {
         font-size: 25px;
         font-weight: bold;
         line-height: 50px;
+    }
+    .title-new-arrivals h2 {
+        line-height: 40px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .title-new-arrivals {
+        transform: translateY(60px);
+        display: flex;
+        justify-content: center;
     }
 }
