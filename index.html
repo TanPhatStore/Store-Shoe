@@ -40,6 +40,16 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="menu-mobile">
+                        <div class="cate" id="cate">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="icon-action" id="icon-action">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
 
 
 
@@ -67,17 +77,17 @@
                 </div>
             </div>
         </div>
-        <div class="row" id="item">
+        <div class="row">
             <div class="call">
-                <div class="col-lg-4 call-item">
+                <div class="col-lg-4 col-6 call-item">
                     <img src="image/SALE.jpg" width="100%" alt="">
                 </div>
-                <div class="col-lg-4 call-item">
+                <div class="col-lg-4 col-6 call-item">
                     <img src="image/delivery.jpg" width="100%" alt="">
                 </div>
             </div>
         </div>
-        <div class="row" style="align-items: center; justify-content: space-evenly;" id="item">
+        <div class="row" style="align-items: center; justify-content: space-evenly;">
             <div class="col-lg-5">
                 <img src="image/new-arrivals.jpg" width="100%" alt="">
             </div>
@@ -1470,62 +1480,67 @@
                 }
             })
         })
-
-        var left = document.getElementById('left');
-        var right = document.getElementById('right');
-        var row_products1 = document.getElementById('product1');
-        var row_products2 = document.getElementById('product2');
-        var row = document.querySelectorAll('.row-products .col-lg-4');
-        var soLuong;
-        var index = 0;
-        // so le 
-        if ((row.length - 1) % 2 == 0) {
-            soLuong = (row.length + 1) / 2;
-        }
-        // so chan
-        else {
-            soLuong = row.length / 2;
-        }
-        var i = 0;
-
-        left.onclick = function sangTrai() {
-            if (index == 0) {
-                index = soLuong - 3;
-                i = -249.33 * 4;
-            } else {
-                --index;
-                i += 249.33;
+        var width;
+        width = screen.availWidth;
+        if (width > 1024) {
+            var left = document.getElementById('left');
+            var right = document.getElementById('right');
+            var row_products1 = document.getElementById('product1');
+            var row_products2 = document.getElementById('product2');
+            var row = document.querySelectorAll('.row-products .col-lg-4');
+            var soLuong;
+            var index = 0;
+            // so le 
+            if ((row.length - 1) % 2 == 0) {
+                soLuong = (row.length + 1) / 2;
             }
-            var chuoi = i + 'px';
-            row_products1.style.marginLeft = chuoi;
-            row_products2.style.marginLeft = chuoi;
+            // so chan
+            else {
+                soLuong = row.length / 2;
+            }
+            var i = 0;
+
+            left.onclick = function sangTrai() {
+                if (index == 0) {
+                    index = soLuong - 3;
+                    i = -249.33 * 4;
+                } else {
+                    --index;
+                    i += 249.33;
+                }
+                var chuoi = i + 'px';
+                row_products1.style.marginLeft = chuoi;
+                row_products2.style.marginLeft = chuoi;
+
+            }
+            right.onclick = function() {
+                if (index == soLuong - 3) {
+                    index = 0;
+                    i = 0;
+                } else {
+                    ++index;
+                    i -= 249.33;
+                }
+                var chuoi = i + 'px';
+                row_products1.style.marginLeft = chuoi;
+                row_products2.style.marginLeft = chuoi;
+            }
+
+            setInterval(function() {
+                if (index == soLuong - 3) {
+                    index = 0;
+                    i = 0;
+                } else {
+                    ++index;
+                    i -= 249.33;
+                }
+                var chuoi = i + 'px';
+                row_products1.style.marginLeft = chuoi;
+                row_products2.style.marginLeft = chuoi;
+            }, 5000);
+        } else if (width < 740) {
 
         }
-        right.onclick = function() {
-            if (index == soLuong - 3) {
-                index = 0;
-                i = 0;
-            } else {
-                ++index;
-                i -= 249.33;
-            }
-            var chuoi = i + 'px';
-            row_products1.style.marginLeft = chuoi;
-            row_products2.style.marginLeft = chuoi;
-        }
-
-        setInterval(function() {
-            if (index == soLuong - 3) {
-                index = 0;
-                i = 0;
-            } else {
-                ++index;
-                i -= 249.33;
-            }
-            var chuoi = i + 'px';
-            row_products1.style.marginLeft = chuoi;
-            row_products2.style.marginLeft = chuoi;
-        }, 5000);
     </script>
     <script src="js/bootstrap.js"></script>
 </body>

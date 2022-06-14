@@ -248,16 +248,25 @@ body {
 }
 
 .menu-mobile {
-    display: flex;
-    justify-content: space-between;
+    display: none;
 }
 
 
 /* table and mobile : width < 1024 px*/
 
 @media only screen and (max-width: 63.9375em) {
+    .navbar-expand,
     #item {
         display: none;
+    }
+    .menu-mobile {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .call-item {
+        margin: 0 0 50px 0;
+        justify-content: center;
     }
 }
 
