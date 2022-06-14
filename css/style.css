@@ -270,6 +270,10 @@ body {
     transition: 0.5s;
 }
 
+.content {
+    transition: 0.5s;
+}
+
 
 /* table and mobile : width < 1024 px*/
 
@@ -297,4 +301,11 @@ body {
 
 /* mobile : width < 740px*/
 
-@media only screen and (max-width: 46.1875em) {}
+@media only screen and (max-width: 46.1875em) {
+    #left {
+        left: 0;
+    }
+    #right {
+        right: 0;
+    }
+}
