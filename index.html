@@ -1507,17 +1507,18 @@
             else {
                 soLuong = row.length / 2;
             }
-            var i = 0;
+            var y = 0;
 
             left.onclick = function sangTrai() {
                 if (index == 0) {
                     index = soLuong - 3;
-                    i = -249.33 * 4;
+                    y = -249.33 * index;
                 } else {
                     --index;
-                    i += 249.33;
+                    y += 249.33;
                 }
-                var chuoi = i + 'px';
+                console.log(y);
+                var chuoi = y + 'px';
                 row_products1.style.marginLeft = chuoi;
                 row_products2.style.marginLeft = chuoi;
 
@@ -1525,12 +1526,12 @@
             right.onclick = function() {
                 if (index == soLuong - 3) {
                     index = 0;
-                    i = 0;
+                    y = 0;
                 } else {
                     ++index;
-                    i -= 249.33;
+                    y -= 249.33;
                 }
-                var chuoi = i + 'px';
+                var chuoi = y + 'px';
                 row_products1.style.marginLeft = chuoi;
                 row_products2.style.marginLeft = chuoi;
             }
@@ -1538,12 +1539,12 @@
             setInterval(function() {
                 if (index == soLuong - 3) {
                     index = 0;
-                    i = 0;
+                    y = 0;
                 } else {
                     ++index;
-                    i -= 249.33;
+                    y -= 249.33;
                 }
-                var chuoi = i + 'px';
+                var chuoi = y + 'px';
                 row_products1.style.marginLeft = chuoi;
                 row_products2.style.marginLeft = chuoi;
             }, 5000);
