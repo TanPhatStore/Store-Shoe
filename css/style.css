@@ -343,4 +343,13 @@ body {
         color: white;
         background-color: black;
     }
+    .map {
+        height: 300px;
+    }
+    .info {
+        font-size: 12px;
+    }
+    #active {
+        font-size: 25px;
+    }
 }
