@@ -9,6 +9,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -123,14 +127,17 @@ html {
 
 .product:hover .image-product {
     transform: translate(15px, -30px) rotate(20deg);
+    opacity: 0.6;
 }
 
 .product:hover .name-product {
     transform: translateY(-15px);
+    opacity: 0.6;
 }
 
 .product:hover .price-product {
     transform: translateY(-30px);
+    opacity: 0.6;
 }
 
 .action {
@@ -239,7 +246,7 @@ html {
     height: 50px;
     color: white;
     font-size: 32px;
-    width: 140px;
+    width: 180px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -286,6 +293,30 @@ html {
     .call-item {
         margin: 0 0 50px 0;
         justify-content: center;
+    }
+    .action button {
+        width: 200px;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    .name-product {
+        font-size: 13px;
+    }
+    .price-product {
+        font-size: 15px;
+    }
+    .product:hover .name-product {
+        transform: translateY(-30px);
+    }
+    .product:hover .price-product {
+        transform: translateY(-50px);
+    }
+    .product:hover .action {
+        transform: translateY(-60px);
+        z-index: 1;
+    }
+    .action {
+        flex-wrap: wrap;
     }
 }
 
