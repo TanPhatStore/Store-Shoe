@@ -38,7 +38,6 @@ body {
 .nav {
     display: flex;
     justify-content: center;
-    background-color: black;
 }
 
 .navbar-item a {
@@ -231,3 +230,43 @@ body {
     font-size: 20px;
     color: white;
 }
+
+.cate {
+    height: 50px;
+    font-size: 32px;
+    width: 50px;
+    text-align: center;
+    color: white;
+}
+
+.icon-action {
+    height: 50px;
+    color: white;
+    font-size: 32px;
+    width: 160px;
+    text-align: center;
+}
+
+.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* table and mobile : width < 1024 px*/
+
+@media only screen and (max-width: 63.9375em) {
+    #item {
+        display: none;
+    }
+}
+
+
+/* table : width >= 740px  and width < 1024 px*/
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
+
+
+/* mobile : width < 740px*/
+
+@media only screen and (max-width: 46.1875em) {}
