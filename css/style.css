@@ -300,10 +300,13 @@ body {
         margin-bottom: 2px;
     }
     .name-product {
-        font-size: 13px;
+        font-size: 12px;
     }
     .price-product {
-        font-size: 15px;
+        font-size: 14px;
+    }
+    .action {
+        margin-top: 25px;
     }
     .product:hover .name-product {
         transform: translateY(-30px);
@@ -317,6 +320,9 @@ body {
     }
     .action {
         flex-wrap: wrap;
+    }
+    .product {
+        height: 280px;
     }
 }
 
