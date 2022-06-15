@@ -332,7 +332,7 @@ body {
         transform: translateY(-40px);
     }
     .product:hover .price-product {
-        transform: translateY(-60px);
+        transform: translateY(-55px);
     }
     .product:hover .action {
         transform: translateY(-75px);
@@ -385,7 +385,7 @@ body {
     }
 }
 
-160
+
 /* mobile : width < 350px*/
 
 @media only screen and (max-width: 21.875em) {
@@ -407,8 +407,9 @@ body {
     }
     .price-product {
         transform: translateY(-20px);
+        font-size: 20px;
     }
     .product {
-        height: 210px;
+        height: 170px;
     }
 }
