@@ -343,17 +343,6 @@ body {
     .product {
         height: 278px;
     }
-}
-
-
-/* table : width >= 740px  and width < 1024 px*/
-
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
-
-
-/* mobile : width < 740px*/
-
-@media only screen and (max-width: 46.1875em) {
     #left {
         left: 0;
         font-size: 35px;
@@ -368,6 +357,17 @@ body {
         color: white;
         background-color: black;
     }
+}
+
+
+/* table : width >= 740px  and width < 1024 px*/
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
+
+
+/* mobile : width < 740px and > 350px*/
+
+@media only screen and (max-width: 46.1875em) and (min-width: 21.875em) {
     .map {
         height: 300px;
     }
@@ -381,5 +381,33 @@ body {
     }
     #active {
         font-size: 25px;
+    }
+}
+
+
+/* mobile : width < 350px*/
+
+@media only screen and (max-width: 21.875em) {
+    .product:hover .image-product {
+        transform: translate(5px, -30px) rotate(20deg);
+    }
+    .product:hover .name-product {
+        transform: translateY(-45px);
+    }
+    .product:hover .price-product {
+        transform: translateY(-50px);
+    }
+    .product:hover .action {
+        transform: translateY(-70px);
+    }
+    .name-product {
+        height: 37px;
+        transform: translateY(-15px);
+    }
+    .price-product {
+        transform: translateY(-20px);
+    }
+    .product {
+        height: 210px;
     }
 }

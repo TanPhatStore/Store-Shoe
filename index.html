@@ -1557,7 +1557,7 @@
                 row_products1.style.marginLeft = chuoi;
                 row_products2.style.marginLeft = chuoi;
             }, 5000);
-        } else if (width < 740) {
+        } else if (width < 740 && width > 350) {
             var left = document.getElementById('left');
             var right = document.getElementById('right');
             var row_products1 = document.getElementById('product1');
@@ -1610,6 +1610,62 @@
                     j -= 207.2;
                 }
                 var chuoi = j + 'px';
+                row_products1.style.marginLeft = chuoi;
+                row_products2.style.marginLeft = chuoi;
+            }, 5000);
+        } else if (width < 350) {
+            var left = document.getElementById('left');
+            var right = document.getElementById('right');
+            var row_products1 = document.getElementById('product1');
+            var row_products2 = document.getElementById('product2');
+            var row = document.querySelectorAll('.row-products .col-lg-4');
+            var soLuong;
+            var index = 0;
+            // so le 
+            if ((row.length - 1) % 2 == 0) {
+                soLuong = (row.length + 1) / 2;
+            }
+            // so chan
+            else {
+                soLuong = row.length / 2;
+            }
+            console.log(soLuong);
+            var k = 0;
+
+            left.onclick = function sangTrai() {
+                if (index == 0) {
+                    index = soLuong - 2;
+                    k = -160 * index;
+                } else {
+                    --index;
+                    k += 160;
+                }
+                var chuoi = k + 'px';
+                row_products1.style.marginLeft = chuoi;
+                row_products2.style.marginLeft = chuoi;
+
+            }
+            right.onclick = function() {
+                if (index == soLuong - 2) {
+                    index = 0;
+                    k = 0;
+                } else {
+                    ++index;
+                    k -= 160;
+                }
+                var chuoi = k + 'px';
+                row_products1.style.marginLeft = chuoi;
+                row_products2.style.marginLeft = chuoi;
+            }
+            setInterval(function() {
+                if (index == soLuong - 2) {
+                    index = 0;
+                    k = 0;
+                } else {
+                    ++index;
+                    k -= 160;
+                }
+                var chuoi = k + 'px';
                 row_products1.style.marginLeft = chuoi;
                 row_products2.style.marginLeft = chuoi;
             }, 5000);
