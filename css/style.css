@@ -90,10 +90,14 @@ body {
 .image-product {
     transition: 0.5s;
     height: 62%;
+    width: 100%;
+    position: relative;
 }
 
 .image-product img {
     transform: translateY(-10px);
+    position: absolute;
+    top: 35%;
 }
 
 .product .icon {
@@ -108,10 +112,11 @@ body {
 .name-product {
     text-align: center;
     font-size: 15px;
-    transform: translateY(10px);
+    transform: translateY(25px);
     height: 50px;
     overflow: hidden;
     transition: 0.5s;
+    font-weight: bold;
 }
 
 .price-product {
@@ -119,6 +124,7 @@ body {
     font-size: 18px;
     margin-top: 10px;
     transition: 0.5s;
+    font-weight: bold;
 }
 
 .product:hover .image-product {
@@ -127,12 +133,12 @@ body {
 }
 
 .product:hover .name-product {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
     opacity: 0.6;
 }
 
 .product:hover .price-product {
-    transform: translateY(-30px);
+    transform: translateY(-35px);
     opacity: 0.6;
 }
 
@@ -321,6 +327,7 @@ body {
     }
     .price-product {
         font-size: 14px;
+        transform: translateY(-20px);
     }
     .action {
         margin-top: 25px;
@@ -329,7 +336,7 @@ body {
         transform: translate(10px, -20px) rotate(20deg);
     }
     .product:hover .name-product {
-        transform: translateY(-40px);
+        transform: translateY(-30px);
     }
     .product:hover .price-product {
         transform: translateY(-55px);
