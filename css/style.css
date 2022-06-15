@@ -336,10 +336,10 @@ body {
         transform: translate(10px, -20px) rotate(20deg);
     }
     .product:hover .name-product {
-        transform: translateY(-37px);
+        transform: translateY(-40px);
     }
     .product:hover .price-product {
-        transform: translateY(-58px);
+        transform: translateY(-60px);
     }
     .product:hover .action {
         transform: translateY(-75px);
