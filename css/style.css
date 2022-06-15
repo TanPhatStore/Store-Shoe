@@ -80,6 +80,7 @@ body {
     margin: 15px;
     overflow: hidden;
     transition: 0.5s;
+    font-family: 'poppins';
 }
 
 .new-products .row {
@@ -139,6 +140,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .action button {
@@ -147,7 +149,7 @@ body {
     background-color: black;
     color: white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .product:hover .action {
