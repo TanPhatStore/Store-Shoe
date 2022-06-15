@@ -226,7 +226,7 @@ body {
 }
 
 .copy {
-    margin-left: 150px;
+    text-align: center;
     font-size: 20px;
     color: white;
 }
@@ -377,39 +377,9 @@ body {
         height: 100%;
     }
     .copy {
-        font-size: 14px;
-        margin-left: 30px;
+        font-size: 13px;
     }
     #active {
         font-size: 25px;
-    }
-}
-
-
-/* mobile : width < 350px*/
-
-@media only screen and (max-width: 21.875em) {
-    .product:hover .image-product {
-        transform: translate(5px, -30px) rotate(20deg);
-    }
-    .product:hover .name-product {
-        transform: translateY(-45px);
-    }
-    .product:hover .price-product {
-        transform: translateY(-50px);
-    }
-    .product:hover .action {
-        transform: translateY(-70px);
-    }
-    .name-product {
-        height: 37px;
-        transform: translateY(-15px);
-    }
-    .price-product {
-        transform: translateY(-20px);
-        font-size: 20px;
-    }
-    .product {
-        height: 170px;
     }
 }
