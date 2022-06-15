@@ -249,28 +249,22 @@ body {
 
 .menu-mobile {
     display: none;
-    align-items: center;
     background-color: black;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
 }
 
 .nav-mobile li {
     list-style: none;
     font-weight: bold;
     line-height: 50px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .nav-mobile {
     width: 300px;
     background-color: black;
     position: absolute;
-    top: 50px;
+    top: 170px;
     left: 0;
     margin-left: -300px;
     transition: 0.5s;
@@ -280,7 +274,7 @@ body {
     transition: 0.5s;
 }
 
-.logo-header {
+.header {
     position: fixed;
     left: 0;
     right: 0;
@@ -288,16 +282,6 @@ body {
     height: 120px;
     z-index: 1;
     transition: 0.5s;
-}
-
-.navbar-expand {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 120px;
-    z-index: 1;
-    transition: 0.5s;
-    background-color: black;
 }
 
 .content1 {
@@ -309,7 +293,6 @@ body {
 
 @media only screen and (max-width: 63.9375em) {
     .navbar-expand,
-    #logo-header,
     #item {
         display: none;
     }

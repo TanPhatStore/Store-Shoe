@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <div class="header" id="header">
             <div class="row logo-header" id="logo-header">
-                <div class="col-lg-12" style="height: 100%;display: flex;justify-content: center;background-color: white;">
+                <div class="col-lg-12" style="height: 120px;display: flex;justify-content: center;background-color: white;">
                     <img src="image/logo-store.png" height="100%" alt="">
                 </div>
             </div>
@@ -41,7 +41,22 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="menu-mobile" id="menu-mobile">
+                    <div class="cate" id="cate">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="icon-action" id="icon-action">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
                 <nav class="nav-mobile" id="nav-mobile">
+                    <li class="navbar-item">
+                        <a href="" style="display: flex; justify-content: center;">
+                            <img src="image/logo-store.png" width="80%" alt="">
+                        </a>
+                    </li>
                     <li class="navbar-item"><a href=""><i class='bx bx-home'></i> TRANG CHỦ</a></li>
                     <li class="navbar-item"><a href=""><i class='bx bx-duplicate'></i> DANH MỤC SẢN PHẨM</a></li>
                     <li class="navbar-item"><a href="">NIKE <i class='bx bx-chevron-down'></i></a></li>
@@ -50,16 +65,6 @@
                     <li class="navbar-item"><a href=""><i class='bx bx-money-withdraw'></i> GIẢM GIÁ</a></li>
                     <li class="navbar-item"><a href=""><i class='bx bx-phone'></i> LIÊN HỆ</a></li>
                 </nav>
-            </div>
-        </div>
-        <div class="menu-mobile" id="menu-mobile">
-            <div class="cate" id="cate">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="icon-action" id="icon-action">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
             </div>
         </div>
         <div class="content">
@@ -1479,24 +1484,20 @@
     <script>
         var width;
         width = screen.availWidth;
-        if (width > 1024) {
-            $(document).ready(function() {
-                var logo = document.getElementById('logo-header');
-                var box = document.getElementById('box');
-                var menu_nav = document.getElementById('navbar-expand');
-                $(window).scroll(function() {
-                    if ($(this).scrollTop()) {
-                        logo.style.marginTop = '-120px';
-                        menu_nav.style.marginTop = '-120px';
-                        box.style.marginTop = '50px';
-                    } else {
-                        logo.style.marginTop = '0px';
-                        menu_nav.style.marginTop = '0px';
-                        box.style.marginTop = '170px';
-                    }
-                })
+        $(document).ready(function() {
+            var logo = document.getElementById('header');
+            var box = document.getElementById('box');
+            var menu_nav = document.getElementById('navbar-expand');
+            $(window).scroll(function() {
+                if ($(this).scrollTop()) {
+                    logo.style.marginTop = '-120px';
+                    box.style.marginTop = '50px';
+                } else {
+                    logo.style.marginTop = '0px';
+                    box.style.marginTop = '170px';
+                }
             })
-        }
+        })
 
 
         if (width > 1024) {
