@@ -22,11 +22,6 @@ body {
 }
 
 .header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    top: 0;
     transition: 0.5s;
 }
 
@@ -277,18 +272,54 @@ body {
     transition: 0.5s;
 }
 
+.logo-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 120px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.navbar-expand {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 120px;
+    z-index: 1;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.content1 {
+    height: 2000px;
+}
+
 
 /* table and mobile : width < 1024 px*/
 
 @media only screen and (max-width: 63.9375em) {
     .navbar-expand,
+    #logo-header,
     #item {
         display: none;
+    }
+    #box {
+        margin-top: 50px;
     }
     .menu-mobile {
         display: block;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        right: 0;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        z-index: 1;
+        transition: 0.5s;
+        position: fixed;
     }
     .call-item {
         margin: 0 0 50px 0;
@@ -322,7 +353,7 @@ body {
         flex-wrap: wrap;
     }
     .product {
-        height: 280px;
+        height: 278px;
     }
 }
 
