@@ -317,6 +317,7 @@ body {
     }
     .name-product {
         font-size: 12px;
+        transform: translateY(-5px);
     }
     .price-product {
         font-size: 14px;
@@ -384,7 +385,7 @@ body {
     }
 }
 
-
+160
 /* mobile : width < 350px*/
 
 @media only screen and (max-width: 21.875em) {
