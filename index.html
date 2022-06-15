@@ -1506,6 +1506,8 @@
             var row_products1 = document.getElementById('product1');
             var row_products2 = document.getElementById('product2');
             var row = document.querySelectorAll('.row-products .col-lg-4');
+            var width_product = row_products1.clientWidth;
+            console.log(width_product);
             var soLuong;
             var index = 0;
             // so le 
@@ -1521,10 +1523,10 @@
             left.onclick = function sangTrai() {
                 if (index == 0) {
                     index = soLuong - 3;
-                    y = -249.33 * index;
+                    y = -width_product * index;
                 } else {
                     --index;
-                    y += 249.33;
+                    y += width_product;
                 }
                 console.log(y);
                 var chuoi = y + 'px';
@@ -1538,7 +1540,7 @@
                     y = 0;
                 } else {
                     ++index;
-                    y -= 249.33;
+                    y -= width_product;
                 }
                 var chuoi = y + 'px';
                 row_products1.style.marginLeft = chuoi;
@@ -1551,7 +1553,7 @@
                     y = 0;
                 } else {
                     ++index;
-                    y -= 249.33;
+                    y -= width_product;
                 }
                 var chuoi = y + 'px';
                 row_products1.style.marginLeft = chuoi;
