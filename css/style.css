@@ -68,6 +68,7 @@ body {
 .call {
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 .call-item {
@@ -339,7 +340,7 @@ body {
         transform: translateY(-40px);
     }
     .product:hover .price-product {
-        transform: translateY(-60px);
+        transform: translateY(-55px);
     }
     .product:hover .action {
         transform: translateY(-75px);
