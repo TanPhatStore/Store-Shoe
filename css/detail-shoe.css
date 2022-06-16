@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,400&display=swap');
+.link {
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+#box {
+    border-bottom: 1px solid #ccc;
+    margin: 0 30px;
+}

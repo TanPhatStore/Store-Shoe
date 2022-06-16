@@ -35,6 +35,11 @@ body {
     justify-content: center;
 }
 
+.icon-menu {
+    color: white;
+    font-size: 30px;
+}
+
 .navbar-item a {
     color: white;
     text-decoration: none;

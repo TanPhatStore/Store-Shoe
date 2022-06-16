@@ -1,0 +1,165 @@
+.list-menu-cate {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    background-color: white;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    transition: 0.5s;
+    display: none;
+}
+
+#menu-cate:hover .list-menu-cate {
+    display: flex;
+    justify-content: start;
+}
+
+.all-products li {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid rgb(165, 165, 165);
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.all-products li img {
+    margin-right: 10px;
+}
+
+.all-products p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.sub-shoe-item p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.all-products {
+    padding: 0;
+}
+
+.sub-shoes {
+    position: absolute;
+    top: -10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    left: 170px;
+    width: 555px;
+    height: 440px;
+    transition: 0.5s;
+    display: none;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.sub-jordan-item {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-jordan-item img {
+    transform: translate(30px, 10px);
+    transition: 0.5s;
+}
+
+.all-products li:hover {
+    background-color: black;
+}
+
+.all-products li:hover .sub a {
+    color: white;
+}
+
+.img-jordan {
+    position: absolute;
+    top: 20px;
+}
+
+.sub-shoe-item img:hover {
+    width: 90%;
+}
+
+.sub a {
+    color: black;
+}
+
+.all-jordan:hover .sub-jordan {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.all-nike:hover .sub-nike {
+    display: flex;
+    justify-content: space-evenly;
+    top: -50px;
+}
+
+.all-adidas:hover .sub-adidas {
+    display: flex;
+    justify-content: space-evenly;
+    top: -90px;
+}
+
+.all-vans:hover .sub-vans {
+    display: flex;
+    justify-content: space-evenly;
+    top: -170px;
+}
+
+.all-converse:hover .sub-converse {
+    display: flex;
+    justify-content: space-evenly;
+    top: -130px;
+}
+
+.all-mlb:hover .sub-mlb {
+    display: flex;
+    justify-content: space-evenly;
+    top: -210px;
+}
+
+.all-yeezy:hover .sub-yeezy {
+    display: flex;
+    justify-content: space-evenly;
+    top: -250px;
+}
+
+.all-newbalance:hover .sub-newbalance {
+    display: flex;
+    justify-content: space-evenly;
+    top: -290px;
+}
+
+.all-matkinh:hover .sub-matkinh {
+    display: flex;
+    justify-content: space-evenly;
+    top: -330px;
+}
+
+.all-vo:hover .sub-vo {
+    display: flex;
+    justify-content: space-evenly;
+    top: -370px;
+}
+
+.all-daygiay:hover .sub-daygiay {
+    display: flex;
+    justify-content: space-evenly;
+    top: -410px;
+}
+
+.list-menu-cate:hover .logo-sub {
+    display: none;
+}
